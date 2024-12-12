@@ -1,0 +1,8 @@
+The issue arises when using Tailwind's `@apply` directive within a custom directive.  Suppose you have a custom directive like this:
+
+```html
+<div class="container mx-auto @apply md:px-6">
+</div>
+```
+
+Tailwind might not correctly apply the `md:px-6` class, leading to unexpected spacing. This often happens due to the order of operations or conflicts with other directives.
